@@ -1,0 +1,98 @@
+body {
+  background-image: url('');
+  font-family: 'poppins', sans-serif;
+}
+.section-title {
+  padding-left: 10px; /* ruang agar teks tidak mepet garis */
+  border-left: 4px solid #cd8c1d; /* garis aksen di kiri */
+  height: 25px;
+  margin: 10px;
+}
+.photo {
+  border-radius: 12px;
+}
+.photo-hobi {
+  width: 220px;
+  margin: 10px;
+  border-radius: 20px;
+  margin-top: -10px;
+  transition: transform 0.3s;
+}
+.photo-hobi:hover {
+  transform: scale(1.1);
+}
+.avatar {
+  width: 220px;          /* atau 250px sesuai kebutuhan */
+  height: 220px;         /* samakan dengan width untuk bulat sempurna */
+  object-fit: cover;     /* isi area tanpa distorsi */
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+}
+.box {
+  background: #fffefe;
+  border: 1px solid #b0b3b9;
+  border-radius: 12px;
+  margin: 100px;
+  margin-top: -70px;
+  box-shadow: 0 5px 7px;
+}
+.logo {
+  text-align: center;
+  margin-top: 20px;
+}
+.logo img {
+  width: 70px;
+}
+.h1 {
+  color: #30569e;
+  text-align: center;
+}
+.h3 {
+  text-align: center;
+  color: gray;
+}
+#h3 {
+  color: #30569e;
+}
+p {
+  font-family: 'poppins' sans-serif;
+  margin-top: -18px;
+  padding: 20px;
+}
+.btn-wave {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #2b90dc;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+}
+.hr {
+  margin: 90px;
+  margin-top: -10px;
+}
+.poto-bio {
+  border-radius: 50px;
+  width: 200px;
+  height: 225px;
+  margin: 20px;
+  transition: transform 0.3s;
+}
+.poto-bio:hover {
+  transform: scale(1.1);
+}
+.li {
+  margin-top: 5px;
+}
+ul li::marker {
+  color: #cd8c1d; /* warna bullet */
+  font-size: 20px; /* bisa juga atur ukuran */
+}
