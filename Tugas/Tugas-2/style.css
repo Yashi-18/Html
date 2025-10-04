@@ -1,25 +1,24 @@
 body {
-  background-image: url('');
   font-family: 'poppins', sans-serif;
 }
 .section-title {
   padding-left: 10px; /* ruang agar teks tidak mepet garis */
   border-left: 4px solid #cd8c1d; /* garis aksen di kiri */
   height: 25px;
-  margin: 10px;
+  margin: 10px;   /* jarak tulisan dr dalem kotaknya */
 }
 .photo {
-  border-radius: 12px;
+  border-radius: 12px; /*buat lengkungan sudut lingkaran*/
 }
 .photo-hobi {
   width: 220px;
   margin: 10px;
-  border-radius: 20px;
-  margin-top: -10px;
-  transition: transform 0.3s;
+  border-radius: 20px; /*Lengkungan garis foto*/
+  margin-top: -10px; /*jarak bagian atas nya*/
+  transition: transform 0.3s; /* biar animasi nya halus g langsung mendadak*/
 }
 .photo-hobi:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* gedein gambarnya jadi ukuran 1:1*/
 }
 .avatar {
   width: 220px;          /* atau 250px sesuai kebutuhan */
@@ -60,19 +59,15 @@ p {
   padding: 20px;
 }
 .btn-wave {
-  display: inline-block;
-  padding: 12px 30px;
+  padding: 12px 30px; /* ngasih jarak dlm tombol biar g gepeng*/
   background: #2b90dc;
   color: white;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: bold; /*nebelin tulisan nya*/
   border-radius: 50px;
-  text-decoration: none;
-  overflow: hidden;
-  position: relative;
-  transition: 0.3s;
-  display: block;
-  width: fit-content;
+  text-decoration: none; /*hilangin garis bawah dr tag*/
+  display: block; /*memenuhi trulisannya */
+  width: fit-content; /*nyesuain teks yg ada d dlmnya*/
   margin: 20px auto;
 }
 .hr {
