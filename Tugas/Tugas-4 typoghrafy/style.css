@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&display=swap');
+@font-face {
+  font-family: Bismillah Script;
+  src: url(Fonts/Bismillah\ Script.ttf);
+}
+.playwrite-de-grund-guides-regular {
+  font-family: "Playwrite DE Grund Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+  font-family: sans-serif;
+  background-color: #f7f9fc;
+}
+header .card{
+  background-color: rgb(194, 249, 249);
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+}
+header {
+  background-color: #d8e8f9;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px;
+}
+header h1{
+  color: #30569e;
+  line-height: 100px;
+  text-transform: capitalize;
+  word-spacing: 9px;
+}
+header h3{
+  font-style: italic;
+  font-weight: 100;
+  color: rgb(78, 75, 75);
+}
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 80%;
+  margin: 20px auto;
+}
+article p{
+  font-family: sans-serif;
+  line-height: 30px;
+}
+b{
+  color: red;
+  text-transform: capitalize;
+}
+u{
+  color: #30569e;
+}
+article h2{
+  color: rgb(4, 92, 80);
+  text-decoration: underline;
+  text-decoration-color: aquamarine ;
+}
+blockquote {
+  background-color: #d8e8f9;
+  border-left: 5px solid #2a5bb5;
+  padding: 15px;
+  font-style: italic;
+  margin: 30px auto;
+  width: 80%;
+  border-radius: 5px;
+  color: #2a2a2a;
+  letter-spacing: 1px;
+}
+.note {
+  background-color: #fdecec;
+  color: #d14b4b;
+  border-left: 5px solid #f85a5a;
+  padding: 15px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 5px;
+}
+footer {
+  text-align: right;
+  width: 80%;
+  margin: 30px auto;
+}
+footer p {
+  font-weight: bold;
+}
+footer h3 {
+  font-family: "Bismillah Script", cursive;
+  color: #d14b4b;
+  font-size: 40px;
+  margin-top: -10px;
+}
