@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solusi Tugas CSS Komponen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Solusi Tugas CSS Komponen</h1>
+  <section class="card">
+    <h3>1. Dismissible Alert (Positioning)</h3>
+    <div class="alert">
+      <strong>Informasi Penting:</strong> Ini adalah contoh notifikasi sukses. Klik "X" untuk menutup.
+      <span class="close-btn">x</span>
+    </div>
+  </section>
+
+  <!-- 2. Profile Card -->
+  <section class="card">
+    <h3>2. Profile Card dengan Status Badge</h3>
+    <div class="profile-card">
+      <img src="photo_2025-10-25_19-55-03.jpg" alt="Rina Kusuma">
+      <div class="badge"></div>
+      <h4>ReDzaky</h4>
+      <p>UI/UX Designer</p>
+    </div>
+  </section>
+
+  <!-- 3. Pricing Cards -->
+  <section class="card">
+    <h3>3. Responsive Pricing Cards (Flexbox)</h3>
+    <div class="flexbox-area">
+      <div class="box">
+        <h4>Paket Dasar</h4>
+        <h2>$15</h2>
+        <p>5 Pengguna</p>
+        <p>2 GB Penyimpanan</p>
+        <p>Dukungan Email</p>
+        <button class="btn basic">Pilih Dasar</button>
+      </div>
+
+      <div class="box pro-blue">
+        <h4>Paket PRO</h4>
+        <h2>$49</h2>
+        <p>**20 Pengguna**</p>
+        <p>**10 GB Penyimpanan**</p>
+        <p>Dukungan Prioritas</p>
+        <button class="btn pro">Beli PRO</button>
+      </div>
+
+      <div class="box">
+        <h4>Paket Bisnis</h4>
+        <h2>$99</h2>
+        <p>Tidak Terbatas</p>
+        <p>50 GB Penyimpanan</p>
+        <p>Dukungan 24/7</p>
+        <button class="btn business">Hubungi Kami</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelector('.close-btn').onclick = function() {
+      this.parentElement.style.display = 'none';
+    }
+  </script>
+<!-- ini yg script dpt dr chatgpt, dan kyknya itu pake java script.
+  tp mas andi jg ngasih nya javascript waktu itu, tp ini mah beda :/ -->
+</body>
+</html>
