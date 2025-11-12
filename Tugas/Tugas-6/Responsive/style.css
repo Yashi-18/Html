@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-image: url('');
+  font-family: 'poppins', sans-serif;
+  font-family: Arial, sans-serif;
+  background: #f8f9fc;
+  margin: 0; /*jrk tulisan dlm kotak*/
+  padding: 0; /*ruang agar teks tidak mepet ke dalam kotak*/
+  color: #333;
+}
+header,
+.header {
+  background: #f8f9fc;
+  color: rgb(28, 28, 28);
+  padding: 15px;
+  text-align: center;
+}
+.container {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 900px; /*max ukuran dr layar nya*/
+}
+nav {
+  background: #fff;
+}
+nav,
+.nav {
+  margin-top: 10px;
+  background: #f8f9fc;
+  padding: 10px;
+}
+nav a,
+.nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none; /* hapus garis bawah */
+  border-radius: 22px; /* ubah sudut jadi bulat */
+  background: #e3e1e1;
+  padding: 6px 14px; /*ruang agar teks tidak mepet ke dalam kotak*/
+  margin-right: 8px; /* jarak luar antar link */
+}
+
+.section-title {
+  padding-left: 10px; /* ruang agar teks tidak mepet garis */
+  border-left: 4px solid #cd8c1d; /* garis aksen di kiri */
+  height: 25px;
+  margin: 10px; /*jrk tulisan dlm kotak*/
+}
+.h1 {
+  color: #30569e;
+  text-align: center;
+}
+
+.h3 {
+  text-align: center;
+  color: gray;
+}
+#h3 {
+  color: #30569e;
+}
+nav {
+  display: flex; /* biar link nya g turun k bawah, jd rata satu baris*/
+  justify-content: center; /* ketengahin tombol nav nya*/
+  gap: 10px; /* Ngasih jarak antar tombol*/
+  margin: 15px 0;
+}
+nav a {
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none; /* menghilangkan garis bawah dr link nya*/
+  border: 1px solid #ccc; /* garis d sekitar kotaknya*/
+  color: #282828;
+}
+
+nav a.active, nav a:hover /* buat animasi transisi */ {
+  background: #1a3dab;
+  color: #fff;
+}
+
+.section-title {
+  padding-left: 10px; /* ruang agar teks tidak mepet garis */
+  border-left: 4px solid #cd8c1d; /* garis aksen di kiri */
+  height: 25px;
+  margin: 10px;
+}
+.logo {
+  text-align: center;
+  margin-top: 20px;
+}
+.active {
+  background: #30569e;
+  color: #fff;
+}
+.photo-hobi {
+  width: 220px;
+  margin: 10px;
+  border-radius: 20px;
+  margin-top: -10px;
+  transition: transform 0.3s; /* bikin perubahan bentuk jadi halus selama 0.3 detik. */
+}
+/* Profile Section Styles */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #343434;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+/* Section Styles */
+.section {
+  margin-bottom: 40px;
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  color: #30569e;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 24px;
+}
+.jadwal {
+  width: 100%;
+  border-collapse: collapse; /* menjadikan border 1 dgn yg lain menjadi 1 garis g misah*/
+  text-align: center;
+  margin-top: 35px;
+}
+
+.jadwal thead th {
+  background: #1d3b8b;
+  color: white;
+}
+
+.jadwal th,
+.jadwal td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.jadwal tbody tr:nth-child(even) /* buT MILIH BARIS YG GENAP*/ {
+  background: #f2f6ff; /* warna selang-seling */
+}
+
+.jadwal tbody tr:hover {
+  background: #eaf0ff; /* efek hover */
+}
+
+.gallery {
+  text-align: center;
+}
+.gallery h2 {
+  color: indigo;
+  font-size: 35px;
+}
+.gallery p {
+  font-size: 18px;
+  color: #666;
+}
+.gallery .card {
+  display: inline-block; /*Membuat box/card jd horizontal*/
+  width: 250px;
+  border: 1px solid #ddd; /*garis luar card nya*/
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden; /* motong gamabr yg keluar dr kotak.*/
+  transition: transform 0.3s ease;
+}
+.gallery .card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.gallery .card figcaption {
+  font-size: 16px;
+  color: white;
+  background-color: #666;
+  margin-top: -4px;
+  padding: 4px;
+}
+.gallery .card:hover {
+  transform: scale(1.05);
+}
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* rasio 16:9 -> (9/16)*100 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px; /* biar sudutnya halus kaya card lain */
+  background: #000; /* biar pas loading ga keliatan putih */
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;   /* isi penuh container */
+  height: 100%;  /* tinggi otomatis sesuai rasio */
+  border: 0;
+}
+
+
+input[type="text"],
+input[type="email"],/* milih semua input dan text area*/
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box; /* buat padding dan border dlm satu elemen (width)*/
+}
+.jarak {
+  margin-top: 10px;
+}
+input:focus, /* efek saat diklik: garis tepinya jadi biru.*/
+textarea:focus,
+select:focus {
+  border-color: #1d3b8b;
+  outline: none; /* menghilangkan garis garis bawaan dr web*/
+}
+.radio-group,
+.checkbox-group {
+  display: flex; /*bikin mereka sejajar ke samping.*/
+  gap: 15px; /*kasih jarak antar tombol*/
+  margin-top: 5px;
+}
+.radio-group label,
+.checkbox-group label {
+  font-weight: normal; /* ketebalan huruf*/
+}
+.button-group {
+  margin-top: 20px;
+  text-align: right;
+}
+.btn-primary,
+.btn-secondary {
+  border: none; /* v */
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer; /* merubah kursor menjadi tangan saat berada d tombol*/
+  transition: 0.3s;
+}
+.btn-primary {
+  /* tombol biru (buat “Kirim Feedback”)*/
+  background: #1d3b8b;
+  color: white;
+}
+.btn-primary:hover {
+  background: #2b90dc;
+}
+.btn-secondary {
+  background: #ccc;
+  color: #333;
+  margin-right: 10px;
+}
+.btn-secondary:hover {
+  background: #aaa;
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+  /* masukkan tag / target selector */
+  nav {
+    flex-direction: column; /* Mengubah arah tumpukan item menjadi vertikal */
+    align-items: stretch; /* Memaksa item mengisi seluruh lebar container */
+  }
+  nav {
+    width: 100%; /* Memastikan setiap list item mengambil lebar penuh */
+  }
+  
+  .gallery-flex {
+  display: flex;
+  flex-wrap: wrap; /* Wajib agar item bisa turun baris */
+  gap: 15px;
+  margin-top: 15px;
+  /* Margin negatif untuk mengimbangi gap di tepi container */
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+
+.gallery-item {
+  /* --- PROPERTI FLEXBOX RINCI (DETAIL) --- */
+  /* flex-grow: 1 -> Memungkinkan item Tumbuh (memperluas) untuk mengisi ruang kosong yang tersisa. */
+  flex-grow: 1;
+  /* flex-shrink: 0 -> Mencegah item Menyusut di bawah ukuran dasarnya (220px). */
+  flex-shrink: 0;
+  /* flex-basis: 220px -> Lebar Awal (Dasar) yang diinginkan item. */
+  /* Jika container cukup lebar, akan ada minimal 220px, lalu item tumbuh mengisi sisa ruang. */
+  flex-basis: 220px; 
+  /* -------------------------------------- */
+  
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--box);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin: 0 7.5px; 
+}
+  .video-responsive {
+  position: relative;
+  /* Trik untuk menjaga rasio aspek 16:9: (9 / 16) * 100% = 56.25% */
+  padding-bottom: 56.25%; 
+  height: 0; /* Mengatur tinggi ke 0 agar padding-bottom menjadi penentu tinggi */
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 8px; 
+}
+
+.video-responsive iframe {
+  position: absolute; /* Diposisikan relatif terhadap .video-responsive */
+  top: 0;
+  left: 0;
+  width: 100%; /* Mengisi lebar penuh dari pembungkus */
+  height: 100%; /* Mengisi tinggi penuh dari pembungkus */
+  border: none;
+}
+}
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  nav {
+    flex-direction: column; /* Mengubah arah tumpukan item menjadi vertikal */
+    align-items: stretch; /* Memaksa item mengisi seluruh lebar container */
+  }
+  nav {
+    width: 100%; /* Memastikan setiap list item mengambil lebar penuh */
+  }
+  nav a {
+    padding: 10px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    background-image: url('');
+    font-family: 'poppins', sans-serif;
+    font-family: Arial, sans-serif;
+    background: #f8f9fc;
+    margin: 0; /*jrk tulisan dlm kotak*/
+    padding: 0; /*ruang agar teks tidak mepet ke dalam kotak*/
+    color: #333;
+  }
+  header,
+  .header {
+    background: #f8f9fc;
+    color: rgb(28, 28, 28);
+    padding: 15px;
+    text-align: center;
+  }
+  .container {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /*max ukuran dr layar nya*/
+  }
+  nav {
+    background: #fff;
+  }
+  nav,
+  .nav {
+    margin-top: 10px;
+    background: #f8f9fc;
+    padding: 10px;
+  }
+  nav a,
+  .nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* hapus garis bawah */
+    border-radius: 22px; /* ubah sudut jadi bulat */
+    background: #e3e1e1;
+    padding: 6px 14px; /*ruang agar teks tidak mepet ke dalam kotak*/
+    margin-right: 8px; /* jarak luar antar link */
+  }
+
+  .section-title {
+    padding-left: 10px; /* ruang agar teks tidak mepet garis */
+    border-left: 4px solid #cd8c1d; /* garis aksen di kiri */
+    height: 25px;
+    margin: 10px; /*jrk tulisan dlm kotak*/
+  }
+  .h1 {
+    color: #30569e;
+    text-align: center;
+  }
+
+  .h3 {
+    text-align: center;
+    color: gray;
+  }
+  #h3 {
+    color: #30569e;
+  }
+  nav {
+    display: flex; /* biar link nya g turun k bawah, jd rata satu baris*/
+    justify-content: center; /* ketengahin tombol nav nya*/
+    gap: 10px; /* Ngasih jarak antar tombol*/
+    margin: 15px 0;
+  }
+  nav a {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none; /* menghilangkan garis bawah dr link nya*/
+    border: 1px solid #ccc; /* garis d sekitar kotaknya*/
+    color: #282828;
+  }
+
+  nav a.active, nav a:hover /* buat animasi transisi */ {
+    background: #1a3dab;
+    color: #fff;
+  }
+
+  .section-title {
+    padding-left: 10px; /* ruang agar teks tidak mepet garis */
+    border-left: 4px solid #cd8c1d; /* garis aksen di kiri */
+    height: 25px;
+    margin: 10px;
+  }
+  .logo {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .active {
+    background: #30569e;
+    color: #fff;
+  }
+  .photo-hobi {
+    width: 220px;
+    margin: 10px;
+    border-radius: 20px;
+    margin-top: -10px;
+    transition: transform 0.3s; /* bikin perubahan bentuk jadi halus selama 0.3 detik. */
+  }
+  /* Profile Section Styles */
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #343434;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  /* Section Styles */
+  .section {
+    margin-bottom: 40px;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .section h2 {
+    color: #30569e;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 24px;
+  }
+  .jadwal {
+    width: 100%;
+    border-collapse: collapse; /* menjadikan border 1 dgn yg lain menjadi 1 garis g misah*/
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .jadwal thead th {
+    background: #1d3b8b;
+    color: white;
+  }
+
+  .jadwal th,
+  .jadwal td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .jadwal tbody tr:nth-child(even) /* buT MILIH BARIS YG GENAP*/ {
+    background: #f2f6ff; /* warna selang-seling */
+  }
+
+  .jadwal tbody tr:hover {
+    background: #eaf0ff; /* efek hover */
+  }
+
+  .gallery {
+    text-align: center;
+  }
+  .gallery h2 {
+    color: indigo;
+    font-size: 35px;
+  }
+  .gallery p {
+    font-size: 18px;
+    color: #666;
+  }
+  .gallery .card {
+    display: inline-block; /*Membuat box/card jd horizontal*/
+    width: 200px;
+    border: 1px solid #ddd; /*garis luar card nya*/
+    margin: 10px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden; /* motong gamabr yg keluar dr kotak.*/
+    transition: transform 0.3s ease;
+  }
+  .gallery .card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+  .gallery .card figcaption {
+    font-size: 16px;
+    color: white;
+    background-color: #666;
+    margin-top: -4px;
+    padding: 4px;
+  }
+  .gallery .card:hover {
+    transform: scale(1.05);
+  }
+
+  input[type="text"],
+input[type="email"],/* milih semua input dan text area*/
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box; /* buat padding dan border dlm satu elemen (width)*/
+  }
+  .jarak {
+    margin-top: 10px;
+  }
+  input:focus, /* efek saat diklik: garis tepinya jadi biru.*/
+textarea:focus,
+select:focus {
+    border-color: #1d3b8b;
+    outline: none; /* menghilangkan garis garis bawaan dr web*/
+  }
+  .radio-group,
+  .checkbox-group {
+    display: flex; /*bikin mereka sejajar ke samping.*/
+    gap: 15px; /*kasih jarak antar tombol*/
+    margin-top: 5px;
+  }
+  .radio-group label,
+  .checkbox-group label {
+    font-weight: normal; /* ketebalan huruf*/
+  }
+  .button-group {
+    margin-top: 20px;
+    text-align: right;
+  }
+  .btn-primary,
+  .btn-secondary {
+    border: none; /* v */
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer; /* merubah kursor menjadi tangan saat berada d tombol*/
+    transition: 0.3s;
+  }
+  .btn-primary {
+    /* tombol biru (buat “Kirim Feedback”)*/
+    background: #1d3b8b;
+    color: white;
+  }
+  .btn-primary:hover {
+    background: #2b90dc;
+  }
+  .btn-secondary {
+    background: #ccc;
+    color: #333;
+    margin-right: 10px;
+  }
+  .btn-secondary:hover {
+    background: #aaa;
+  }
+}
